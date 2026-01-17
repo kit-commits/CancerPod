@@ -1,0 +1,46 @@
+{
+    "signal_intake": {
+    "title": "Tell Us About Your Cancer Diagnosis And History",
+    "fields": {
+        "cancer_type": {
+            "label": "Type of Cancer Diagnosed",
+            "placeholder": "e.g., Breast Cancer, Lung Cancer"
+        },
+        "age_range":{
+            "label": "Age Range at Diagnosis",
+            "placeholder": "e.g., 18-30, 30-40, 41-50, 51-60, 61+"
+        },
+        "diagnosis_context": {
+            "label": "Context of Diagnosis",
+            "placeholder": "No diagnosis, Routine Screening, Symptomatic Presentation"
+        }, 
+        "intent":{
+            "label": "Your Intent",
+            "placeholder": "e.g., Seeking Second Opinion, Monitoring, Treatment Options"
+        }, 
+        "preferences":{
+            "label": "Preferences for Specialist Consultation",
+            "placeholder": "Reasearch Focus, Bedside Manner, Location"
+        },
+        "diagnosis_date": {
+            "label": "Date of Diagnosis",
+            "placeholder": "MM/DD/YYYY"
+        },
+        "treatment_history": {
+            "label": "Treatment History",
+            "placeholder": "e.g., Surgery, Chemotherapy, Radiation"
+        },
+        "family_history": {
+            "label": "Family History of Cancer",
+            "placeholder": "e.g., Yes, No, Unknown"
+        },
+        "additional_notes": {
+            "label": "Additional Notes",
+            "placeholder": "Any other relevant information"
+        }
+    },
+    "submit_button": {
+        "label": "Submit Information" 
+    }
+  }  
+}

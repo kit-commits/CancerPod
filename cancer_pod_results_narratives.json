@@ -1,0 +1,15 @@
+{ 
+    "results_page": {
+        "title": "Specialist Consultation Results",
+        "summary_section": {
+            "title": "Summary of Findings",
+            "description": "This section provides a concise summary of the patient's risk signals and the rationale for recommending a specialist consultation.",
+            "framing": "The summary should be framed in a way that is informative and supportive, emphasizing the potential benefits of consulting a specialist.",
+            "tone": "The tone should be empathetic and reassuring, aiming to alleviate any concerns the patient may have about their health.",
+            "what_this_means": "This section should clearly explain what the findings mean for the patient's health and why a specialist consultation is recommended.",
+            "limitations": "It is important to acknowledge any limitations of the analysis, including the fact that no real patient data is being used and that this is a mock-up for demonstration purposes.",
+            "next_steps": "This section should outline the recommended next steps for the patient, including how to schedule a consultation with a specialist and what to expect during the consultation."
+
+        }
+    }
+}
