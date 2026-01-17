@@ -1,0 +1,17 @@
+{
+    "ethics_bias_page": {
+        "title": "Ethics and Bias Considerations",
+        "body": "This section outlines the ethical considerations and bias mitigation strategies implemented in the Cancer Pod app to ensure fair and responsible use of user data.",
+        "model_limits": [
+            "Does not provide a medical diagnosis or treatment plan.",
+            "Intended for informational purposes only; not a substitute for professional medical advice.",
+            "Does not predict individual cancer outcomes or risk with certainty."
+        ],
+        "what_it_will_not_do": [
+            "Will not share personal data with third parties without consent.",
+            "Will not use data for purposes other than those explicitly stated.",
+            "Will not make decisions on behalf of users regarding their health."
+        ],
+        "opt_in_language": "By opting in, you agree to allow Cancer Pod to use your data to generate risk summaries and recommendations while adhering to strict ethical guidelines and data protection measures."
+    }
+}
