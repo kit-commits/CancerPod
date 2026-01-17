@@ -1,0 +1,27 @@
+{
+    "landing": {
+        "title": "Welcome to CancerPod",
+        "body": "Cancer Pod is a decision-support app that is designed to help people recognize when it may be worth consulting a cancer specialist earlier."
+    }, 
+    "risk_signal_intake": {
+        "title": "Risk Signal Intake",
+        "description": "This section gives the patient the option to allow summaries to be generated their data entries. No real data is stored yet, this is a mock."
+    }, 
+    "doctor_pool": {
+        "title": "Doctor Pool",
+        "description": "This section allows the patient to select from a pool of cancer specialists to consult with based on their risk signals."
+    },
+    "ethics_safety": {
+        "title": "Ethics and Safety",
+        "description": "This section outlines the ethical considerations and safety measures taken to ensure patient data is handled responsibly."
+    }, 
+    "privacy_data": {
+        "title": "Privacy and Data Handling",
+        "body": "This section details how patient data is protected. Data is pseudonymized, encrypted, and never sold."
+    }, 
+    "next_steps": {
+        "title": "What Happens Next?",
+        "body": "This section outlines the next steps for patients after using the Cancer Pod app, including follow-up consultations and monitoring."
+    }
+}
+
