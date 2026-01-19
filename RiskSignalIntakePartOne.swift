@@ -29,21 +29,21 @@ struct RiskSignalIntakePartOne: View {
             }
             
             Text("Explicit Opt In")
-                .font(.system(size: 48, weight: .semibold, design: .default))
+                .font(.system(size: 48, weight: .semibold))
                 .foregroundColor(Color(red: 74/255, green: 79/255, blue: 85/255))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 40)
             
             Toggle("Store your responses for optional clinician sharing?", isOn: $shareWithClinician)
-                .toggleStyle(SwitchToggleStyle(tint: Color(hex: "1F3A5F")))
+                .toggleStyle(SwitchToggleStyle(tint: Color(hex: "#1F3A5F")))
                 .padding(.horizontal, 40)
             
-            Toggle("Allow summaries to be generated from your entries?", isOn: $shareWithClinician)
-                .toggleStyle(SwitchToggleStyle(tint: Color(hex: "1F3A5F")))
+            Toggle("Allow summaries to be generated from your entries?", isOn: $allowSummaries)
+                .toggleStyle(SwitchToggleStyle(tint: Color(hex: "#1F3A5F")))
                 .padding(.horizontal, 40)
             
-            Toggle("Allow clinicians you choose to see trends, not raw notes?", isOn: $shareWithClinician)
-                .toggleStyle(SwitchToggleStyle(tint: Color(hex: "1F3A5F")))
+            Toggle("Allow clinicians you choose to see trends, not raw notes?", isOn: $allowTrendView)
+                .toggleStyle(SwitchToggleStyle(tint: Color(hex: "#1F3A5F")))
                 .padding(.horizontal, 40)
             
             Button(action: {
@@ -54,7 +54,7 @@ struct RiskSignalIntakePartOne: View {
                     .foregroundColor(.white)
                     .frame(width: 200, height: 48)
                     .background(
-                       Color(red: 31/255, green: 58/255, blue: 95/255)
+                       Color(hex: "#1F3A5F")
                     ).cornerRadius(10)
             }
             
@@ -72,7 +72,7 @@ struct RiskSignalIntakePartOne: View {
 // MARK: - Hex Color Helper
 
 extension Color {
-    init(hex: String) {
+    static func fromHex(_ hex: String) -> Color {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int: UInt64 = 0
         Scanner(string: hex).scanHexInt64(&int)
@@ -84,15 +84,12 @@ extension Color {
         } else {
             r = 0; g = 0; b = 0
         }
-        self.init(
-            red: Double(r)/255,
-            green: Double(g)/255,
-            blue: Double(b)/255
-        )
+        return Color(red: Double(r)/255, green: Double(g)/255, blue: Double(b)/255)
     }
 }
 
-#Preview {
-    RiskSignalIntakePartOne()
+struct RiskSignalIntakePartOne_Previews: PreviewProvider {
+    static var previews: some View {
+        RiskSignalIntakePartOne()
+    }
 }
-
